@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         }
         let defaultBtn = UIAlertAction(title: "Default", style: .default) { (action) in
             print("Default Action")
-            print(alert.textFields?.first!)
+            print(alert.textFields?.first?.text!)
         }
         alert.addAction(cancelBtn)
         alert.addAction(defaultBtn)
